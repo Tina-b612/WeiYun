@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/index-style.css" />
+</head>
+<body>
+<div id="Mask">	</div>
+<section id="_main_ui_roo">
+	<header id="_main_fixed_header" class="lay-header clearFix">	<!-- 页面头部 -->
+		<h1 class="logo Fl">
+			<a href="#">
+				<img src="img/logo.png" alt="">
+			</a>
+		</h1>
+		<a href="#" class="text Fl">微云会员首次开通低至1元</a>
+		<div id="_main_face" class="user  Fr"> <!-- 用户栏 -->
+			<img src="img/userImg.png" alt="" class="userImage">
+			<i class="ico"></i>
+		</div>
+		<div class="_main_face_menu Fr">	<!-- 主体面部菜单 -->
+			<div class="ui-pop-head">	<!-- 用户注册名 -->
+				<span class="user_name">Tina</span>
+				<div class="_main_space_info"> 	<!-- 主体空间信息 -->
+					<div>
+						已使用：<span class="_main_space_info_used_space_text">74.47M</span> <!-- 用户已使用空间 -->
+					</div>
+					<div>
+						总容量：<span class="main_space_info_total_space_text" >1029G</span>
+					</div>
+					<div class="ui-quota">	<!-- 用户指标 -->
+						<div class="ui-quota-bar"></div> <!-- 用户指标使用条 -->
+					</div>
+				</div>
+				<ul class="ui-menu">	<!-- 用户菜单 -->
+					<li><div class="borderTop"></div><a href="javascript:;"></i>开通会员</a></li>
+					<li><div class="borderTop"></div><a href="javascript:;"></i>独立密码<span>（未开启）</span></a></li>
+					<li><div class="borderTop"></div><a href="javascript:;"></i>反馈</a></li>
+					<li><div class="borderTop"></div><a href="javascript:;"></i>退出</a></li>
+				</ul>	
+			</div>
+		</div>
+		<div class="header-search Fr">  <!-- 搜索框 -->
+			<i class="lay-header-ico"></i>
+			<input type="text" placeholder="搜索全部文件">
+		</div>
+		<div class="loginBar Fr clearFix">
+			<a href="#" class="renew-btn Fl">
+				<i class="ico"></i>
+				会员中心
+			</a>
+			<a href="#" class="download-btn Fl">
+				<i class="ico"></i>
+				下载客户端</a>
+		</div>
+	</header>
+	<section id="main">		<!-- 页面主体 -->
+		<section id="mainNavBox" class="lay-aside">			<!-- 侧边栏-->
+			<div data-action="upload" class="upload-btn">
+                <a id="upload-btn" class="g-btn g-btn-blue" href="#" hidefocus="on">
+                    <span class="btn-inner"><i>+</i><span class="text">上传</span></span>
+                </a>
+            </div>
+			<div class="aside-box" id="_main_nav_aside_box">
+                <div class="aside-wrap" id="_main_nav_aside_wrap">
+                    <ul class="nav-box">
+                        <li class="nav-list nav-current">
+                            <a class="link all" href="#" title="目录"><i></i>目录</a>
+                        </li>
+                        <li class="nav-list">
+                            <a class="link recent" href="#" title="最近"><i></i>最近</a>
+                        </li>
+                        <li class="nav-gap"><span class="gap"></span></li>
+                        <li class="nav-list">
+                            <a class="link doc" href="#" title="文档"><i></i>文档</a>
+                        </li>
+                        <li class="nav-list">
+                            <a class="link pic" href="#" title="图片"><i></i>图片</a>
+                        </li>
+                        <li class="nav-list">
+                            <a class="link voice" href="#" title="音乐"><i></i>音乐</a>
+                        </li>
+                        <li class="nav-list">
+                            <a class="link video" href="#" title="视频"><i></i>视频</a>
+                        </li>
+                        <li class="nav-list">
+                            <a class="link note" href="#" title="笔记"><i></i>笔记</a>
+                        </li>
+                        <li class="nav-gap"><span class="gap"></span></li>
+                        <li class="nav-list">
+                            <a class="link clip" href="#" title="剪贴板"><i></i>剪贴板</a>
+                        </li>
+                        <li class="nav-gap"><span class="gap"></span></li>
+                        <li class="nav-list">
+                            <a class="link share" href="#" title="分享的链接"><i></i>分享的链接</a>
+                        </li>
+                        <li class="nav-list">
+                            <a class="link recycle" href="#" title="回收站"><i></i>回收站</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+		</section>		
+		<nav class="lay-main-toolbar clearFix">						<!-- 工具栏 -->
+			<a href="javascript:;" id="toolbar-download-btn" class="toolbar-btn Fl"><i class="ico"></i> 下载</a>
+			<a href="javascript:;" id="toolbar-share-btn" class="toolbar-btn Fl"><i class="ico"></i> 分享</a>
+			<a href="javascript:;" id="toolbar-move-btn" class="toolbar-btn Fl"><i class="ico"></i> 移动到</a>
+			<a href="javascript:;" id="toolbar-rename-btn" class="toolbar-btn Fl"><i class="ico"></i> 重命名</a>
+			<a href="javascript:;" id="toolbar-remove-btn" class="toolbar-btn Fl"><i class="ico"></i> 删除</a>
+			<a href="javascript:;" id="new-Folder-btn" class="toolbar-btn Fl"><i class="ico"></i> 新建文件夹</a>
+		</nav>
+
+		<div id="prompt-no-choose-box"></div>
+		<div id="prompt-on-change-box"></div>
+		<div id="prompt-on-chooses-box"></div>
+		<div class="full-tip-box">
+		    <span class="full-tip">
+		        <span class="inner">
+		            <i class="ico"></i>
+		            <span class="text" data-id="label">新建文件夹成功</span>
+		    </span>
+		    </span>
+		</div>
+		<div id="prompt-remove-box"  class="prompt-box">	<!-- 点击删除弹框 -->
+			<div class="prompt-box-header">删除文件<a href="javascript:;" class="prompt-cancel-btn"></a></div>
+			<p 	class="prompt-remove-box-inner"><i class="ico"></i>确定要删除这个文件夹吗？</p>
+			<p  class="prompt-remove-box-tip">已删除的文件可以在回收站找到</p>
+			<p  class="prompt-box-btn clearFix">
+				<a href="javascript:;" class="prompt-box-cancel-btn">取消</a>
+				<a href="javascript:;" class="prompt-remove-box-confirm-btn prompt-box-confirm-btn">确定</a>
+			</p>
+		</div>
+		<div id="prompt-move-box"  class="prompt-box">		<!-- 点击移动到弹框 -->
+			<div class="prompt-box-header">选择储存位置<a href="javascript:;" class="prompt-cancel-btn"></a></div>
+			<div class="prompt-move-box-inner">
+				<p class="current-folder"><i class="ico"></i>QQ <span class="current-folder-length"></span> </p>
+				<div class="mova-tree-menu">
+					<p class="mova-tree-menu-header">移动到：</p>
+					<div class="mova-tree-menu-list-box">
+						
+					</div>
+				</div>
+			</div>
+			<p  class="prompt-box-btn clearFix">
+				<a href="javascript:;" class="prompt-box-cancel-btn">取消</a>
+				<a href="javascript:;" class="prompt-move-box-confirm-btn prompt-box-confirm-btn">确定</a>
+				<span class="tip"></span>
+			</p>
+		</div>
+		<div class="wrap">							<!-- 内容主体 -->
+			<div class="tree-menu">
+           <!--  <ul>
+               <li>
+                   <div class="tree-nav tree-contro">
+                       <span>
+                           <strong class="ellipsis">微云</strong>
+                           <i class="ico"></i>
+                       </span>
+                   </div>
+               </li>
+           </ul> -->
+        	</div>
+        	<div class="wrap-top clearFix">						<!-- 路径栏 -->
+				<label class="wrap-top-checkAll Fl">		
+					<span class="wrap-top-checkBox"></span>
+				</label>
+				<div class="wrap-top-pathBox clearFix Fl">
+					<!-- <a href="javascript:;" class="pathBox clearFix"><span class="path">微云</span> </a> -->
+				</div>
+			</div>
+			<ul class="wrap-list clearFix"></ul>		<!-- 文件夹列表 -->
+		</div>
+	</section>
+</section>
+<!--<div class="drag-helper ui-draggable-dragging" >
+    <div class="icons">
+         <i class="icon icon0 filetype icon-folder"></i>           
+        <i class="icon icon1 filetype icon-folder"></i>       
+        <i class="icon icon2 filetype icon-folder"></i>      
+        <i class="icon icon3 filetype icon-folder"></i>   
+    </div>
+    <span class="sum">1</span>
+</div>-->
+<script src="js/data.js"></script>
+<script src="js/tools.js"></script>
+<script src="js/dataAction.js"></script>
+<script src="src/dialog/js/dialog.js"></script>
+<script src="js/create.js"></script>
+<script src="js/index3.js"></script>
+</body>
+</html>
